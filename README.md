@@ -10,12 +10,12 @@ vocabulary on the screen.
 
 > $ ./learn-words.sh
 
-Everytime you press <<ENTER>> key, it picks another vocabulary from
+Everytime you press 'ENTER' key, it picks another vocabulary from
 new-words.txt for you.
 
 ## PRONUNCIATION
 
-Pressing <<a>> key, it will play the audio file of the current
+Pressing 'a' key, it will play the audio file of the current
 vocabulary.  You can play the pronunciation as many times as you like.
 
 Running the tool with the "-a" parameter, it will play pronunciations
@@ -23,13 +23,13 @@ automatically.
 
 ## DEFINITION
 
-Pressing <<d>> key, it will show the definition of the current
+Pressing 'd' key, it will show the definition of the current
 vocabulary.
 
 ## TAG and UNTAG
 
-Pressing <<t>> key, the current vocabulary will be added to tagged-words.txt.
-Pressing <<T>> key, the current vocabulary will be remove from tagged-words.txt.
+Pressing 't' key, the current vocabulary will be added to tagged-words.txt.
+Pressing 'T' key, the current vocabulary will be remove from tagged-words.txt.
 
 By maintaining tagged-words.txt, you can revise only vocabularies in
 this file by running the following command.
@@ -40,8 +40,8 @@ this file by running the following command.
 
 For some vocabularies, you want to learn them more often than others.
 
-Pressing <<r>> key, the current vocabulary will be added to reinforce-words.txt.
-Pressing <<T>> key, the current vocabulary will be removed from reinforce-words.txt.
+Pressing 'r' key, the current vocabulary will be added to reinforce-words.txt.
+Pressing 'T' key, the current vocabulary will be removed from reinforce-words.txt.
 
 The vocabularies in reinforce-words.txt have higher chance to be picked by the tool.
 
