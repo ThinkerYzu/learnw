@@ -1,5 +1,6 @@
 #!/bin/bash
 W="$1"
+WN=$(echo $W|sed "s/ /-/g")
 D=$(dirname $0)
 FETCHER="python $D/cambridge.py"
 CACHE=$D/cambridge_cache
@@ -13,10 +14,10 @@ elif [ "$W" = "-D" ]; then
     W="$2"
 fi
 
-DEFINITION=$CACHE/"${W}".txt
+DEFINITION=$CACHE/"$WN".txt
 
 if [ "$FUNC" = "DEL" ]; then
-    rm $CACHE/"$W".txt
+    rm "$DEFINITION"
 elif [ "$FUNC" = "DEF" ]; then
     if [ ! -e "$DEFINITION" ]; then
 	$FETCHER "$W" > "$DEFINITION"

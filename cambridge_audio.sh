@@ -1,9 +1,10 @@
 #!/bin/bash
 W=$1
+WN=$(echo $W|sed "s/ /-/g")
 WGET="wget -q"
 CACHE=$(dirname $0)/cambridge_cache
 CAMBRIDGE=$(dirname $0)/cambridge.sh
-AUDIO=$CACHE/${W}.mp3
+AUDIO=$CACHE/${WN}.mp3
 
 if [ ! -e "$AUDIO" ]; then
     if $CAMBRIDGE "$W" > /dev/null 2>&1; then
