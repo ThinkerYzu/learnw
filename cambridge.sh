@@ -1,6 +1,5 @@
 #!/bin/bash
 W="$1"
-WN=$(echo $W|sed "s/ /-/g")
 D=$(dirname $0)
 FETCHER="python $D/cambridge.py"
 CACHE=$D/cambridge_cache
@@ -13,6 +12,8 @@ elif [ "$W" = "-D" ]; then
     FUNC="DEF"
     W="$2"
 fi
+
+WN=$(echo $W|sed "s/ /-/g")
 
 DEFINITION=$CACHE/"$WN".txt
 
